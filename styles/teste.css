@@ -1,0 +1,46 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Centraliza tudo */
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+    font-family: sans-serif;
+  }
+  
+  /* Header centralizado com largura máxima */
+  header {
+    max-width: 1080px;
+    width: 100%;
+    margin-bottom: 2rem;
+    text-align: center;
+    background: #222;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  
+  /* Container das caixas */
+  .container {
+    display: flex;
+    max-width: 1080px;
+    width: 100%;
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+  
+  /* Caixas com mesmo tamanho */
+  main,
+  aside {
+    flex: 1;
+    background: #eee;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  

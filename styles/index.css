@@ -1,0 +1,221 @@
+@import url(global.css);
+
+/* Header centralizado com largura máxima */
+header {
+  max-width: 1366px;
+  width: 100%;
+  margin: 4rem;
+  text-align: start;
+}
+
+/* Container das caixas */
+.container {
+  display: flex;
+  max-width: 1366px;
+  width: 100%;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+/* Caixas com mesmo tamanho */
+main,
+aside {
+  flex: 1;
+  /* background: #eee; */
+  /* padding: 1rem; */
+  /* border-radius: 8px; */
+}
+
+main {
+  & .start {
+    margin-top: 0.75rem;
+    margin-bottom: 2.375rem;
+    width: 509px;
+  }
+
+  & .start-title {
+    font: var(--rbt-mono);
+    background: var(--gradient-content);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+
+    text-transform: uppercase;
+  }
+
+  & h1 {
+    font: var(--sora-lg);
+    color: var(--content-primary);
+    text-transform: uppercase;
+  }
+
+  & .questions {
+    width: 509px;
+    display: flex;
+    flex-direction: column;
+    gap: 2.25rem;
+
+    & .item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+
+      & p {
+        font: var(--rbt-flex-p-sm);
+        color: var(--content-secondary);
+      }
+
+      & span {
+        font: var(--rbt-flex-p-md);
+        color: var(--content-brand);
+      }
+    }
+  }
+}
+
+aside {
+  & .aside-1 {
+    /* display: none; */
+
+    width: 509px;
+
+    & .form-title {
+      margin-bottom: 2.5rem;
+
+      & .p1 {
+        font: var(--rbt-flex-lb-md);
+        color: var(--content-primary);
+        text-transform: uppercase;
+      }
+
+      & .p2 {
+        font: var(--rbt-flex-p-lg);
+        color: var(--content-secondary);
+      }
+    }
+
+    & form {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+
+      & .input-group {
+        display: flex;
+        flex-direction: row;
+        gap: 0.75rem;
+        margin-bottom: 1.25rem;
+
+        div {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          width: 6rem;
+
+          & label {
+            text-transform: uppercase;
+            font: var(--rbt-flex-lb-md);
+            color: var(--content-secondary);
+          }
+
+          & input {
+            background-color: var(--background-secondary);
+            font: var(--sora-sm);
+            color: var(--content-primary);
+
+            width: 96px;
+            height: 56px;
+            padding: 4px 8px;
+            border-radius: 8px;
+            border: 0;
+
+            text-align: center;
+          }
+        }
+      }
+
+      & .bottom-group {
+        display: flex;
+        flex-direction: column;
+
+        & .toggle-div {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 0.5rem;
+          margin-bottom: 2.5rem;
+
+          & label {
+            font: var(--rbt-flex-lb-sm);
+            color: var(--content-primary);
+          }
+        }
+
+        & .botao input {
+          width: 100%;
+          background-color: var(--background-tertiary);
+          color: var(--content-primary);
+          font: var(--rbt-flex-lb-md);
+          padding: 0.75rem 1.5rem;
+          border-radius: 8px;
+          border: none;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  & .aside-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3.75rem;
+
+    & .result-title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            font: var(--rbt-flex-lb-md);
+            color: var(--content-primary);
+            text-transform: uppercase;
+        }
+
+        p {
+            font: var(--rbt-mono);
+            color: var(--content-secondary);
+        }
+    }
+
+    & .result-number {
+        margin-block: 2.5rem;
+
+        p {
+            font: bold 3rem/1.5 var(--ff-rbt-mono);
+            color: var(--content-brand);
+        }
+    }
+
+    & .reset-btn {
+        
+        & input {
+            width: 482px;
+            height: 56px;
+
+            font: var(--rbt-flex-lb-md);
+            color: var(--content-primary);
+
+            background-color: var(--background-tertiary);
+            border: 0;
+            border-radius: 8px;
+        }
+    }
+  }
+
+  & .hidden {
+    display: none;
+  }
+}
