@@ -69,6 +69,11 @@ function exibeResultado(result = 0) {
 
         // Adicionado o p na div
         divResultado.append(pResultado)
-    }
-    
+    }   
 }
+
+// Validar os inputs
+document.querySelectorAll('.only-numbers').forEach(input => {
+    input.addEventListener('input', e => e.target.value = e.target.value.replace(/\D+/g, ''));
+  });
+  
