@@ -47,16 +47,16 @@
             <form>
                 <div class="input-group">
                     <div>
-                        <label for="input-number">números</label>
-                        <input type="text" id="input-number" name="input-number">
+                        <label for="qtd-sorteios">números</label>
+                        <input type="text" id="qtd-sorteios" name="qtd-sorteios">
                     </div>
                     <div>
-                        <label for="input-number">de</label>
-                        <input type="text" id="input-number" name="input-number">
+                        <label for="start">de</label>
+                        <input type="text" id="start" name="start">
                     </div>
                     <div>
-                        <label for="input-number">até</label>
-                        <input type="text" id="input-number" name="input-number">
+                        <label for="end">até</label>
+                        <input type="text" id="end" name="end">
                     </div>
                 </div>
 
@@ -67,7 +67,7 @@
                     </div>  
 
                     <div class="botao">
-                        <input type="button" value="SORTEAR ->">
+                        <input type="submit" value="SORTEAR ->" id="button">
                     </div>
                 </div>
             </form>
@@ -79,14 +79,14 @@
                 <p>1° resultado</p>
             </div>
             <div class="result-number">
-                <p>23</p>
+                 <!-- Preenchido pelo javascript com o resultado do sorteio -->
             </div>
             <div class="reset-btn">
-                <input type="button" value="SORTEAR NOVAMENTE">
+                <input type="button" value="SORTEAR NOVAMENTE" id="button-reset">
             </div>
         </div>
       </aside>
     </div>
   </body>
-  
+  <script src="scripts/script.js"></script>
 </html>

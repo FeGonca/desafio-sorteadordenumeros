@@ -213,6 +213,17 @@ aside {
             border-radius: 8px;
         }
     }
+
+    & .result-number {
+      display: flex;
+      gap: 1rem;
+
+      & p {
+        border: 1px solid var(--content-brand);
+        border-radius: 1rem;
+        padding-inline: 1rem;
+      }
+    }
   }
 
   & .hidden {
